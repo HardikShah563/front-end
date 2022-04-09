@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeholics | Login</title>
+    <link rel="stylesheet" href="./login-page.css" />
+    <script src="https://kit.fontawesome.com/6d232ec003.js" crossorigin="anonymous"></script>
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="logo">
+            <img src="../../res/logo-white-transp.png" alt="" />
+        </div>
+        <div class="text-just-below-logo">
+            <p>Fill in the below details to officially be a Codeholic Member: </p>
+        </div>
+    </div>
+
+    <div class="grid-input-container">
+        
+    </div>
+
+    <div class="input-container">
+        <div class="input-details">
+            <div class="textbox">
+                <input type="text" name="username" id="username" placeholder="Codeholics Username" required="required">
+            </div>
+            <div class="textbox-mini">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required="required">
+            </div>
+            <div class="textbox-mini">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required="required">
+            </div>
+            <div class="textbox">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required="required">
+            </div>
+            <div class="textbox-mini">
+                <input type="password" placeholder="Create Password" name="password" required="required">
+            </div>
+            <div class="textbox-mini">
+                <input type="password" placeholder="Retype Password" name="password" required="required">
+            </div>
+            <div class="radio">
+                <p>Gender: </p>
+                <div class="radio-buttons">
+                    <label for="gender">
+                        <input type="radio" name="gender" id="" value="male"> Male
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="" value="female"> Female
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="" value="other"> Other
+                    </label>
+                </div>
+            </div>
+            <div class="textbox">
+                <input type="text" name="city" id="city" placeholder="Enter Your City" required="required">
+            </div>
+            <div class="radio">
+                <p>Coding Experience: </p>
+                <div class="radio-buttons">
+                    <label for="experience">
+                        <input type="radio" name="experience" id="" value="noob"> Noob
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="experience" id="" value="intermediate"> Intermediate
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="experience" id="" value="expert"> Expert
+                    </label>
+                </div>
+            </div>
+            <button class="btn">
+                <a href="../Files/index.html">Register</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
