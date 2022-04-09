@@ -22,70 +22,71 @@
             <img src="../../res/logo-white-transp.png" alt="" />
         </div>
         <div class="text-just-below-logo">
-            <p>Fill in the below details to officially be a Codeholic Member: </p>
+            <p>Fill in the below details to officially be a Codeholics Member: </p>
         </div>
     </div>
 
     <div class="grid-input-container">
-        
+
     </div>
 
     <div class="input-container">
-        <div class="input-details">
-            <div class="textbox">
-                <input type="text" name="username" id="username" placeholder="Codeholics Username" required="required">
+        <form action="">
+            <input class="input-img" type="image" src="../../res/user-male.png" alt="Upload Photo">
+
+            <input class="textbox" type="text" name="username" id="username" placeholder="Codeholics Username"
+                required="required">
+
+            <div class="mini">
+                <input class="textbox-mini" type="text" name="fname" id="fname" placeholder="First Name"
+                    required="required">
+
+                <input class="textbox-mini" type="text" name="lname" id="lname" placeholder="Last Name"
+                    required="required">
             </div>
-            <div class="textbox-mini">
-                <input type="text" name="fname" id="fname" placeholder="First Name" required="required">
+
+            <input class="textbox" type="email" name="email" id="email" placeholder="Email Address" required="required">
+
+            <div class="mini">
+                <input class="textbox-mini" type="password" placeholder="Create Password" name="password"
+                    required="required">
+
+                <input class="textbox-mini" type="password" placeholder="Retype Password" name="password"
+                    required="required">
             </div>
-            <div class="textbox-mini">
-                <input type="text" name="lname" id="lname" placeholder="Last Name" required="required">
-            </div>
-            <div class="textbox">
-                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required="required">
-            </div>
-            <div class="textbox-mini">
-                <input type="password" placeholder="Create Password" name="password" required="required">
-            </div>
-            <div class="textbox-mini">
-                <input type="password" placeholder="Retype Password" name="password" required="required">
-            </div>
+
+            <input class="textbox" type="text" name="city" id="city" placeholder="Enter Your City" required="required">
+            <p class="coding-experience-text">Coding Experience: </p>
             <div class="radio">
-                <p>Gender: </p>
-                <div class="radio-buttons">
-                    <label for="gender">
-                        <input type="radio" name="gender" id="" value="male"> Male
-                    </label>
-                    <label for="gender">
-                        <input type="radio" name="gender" id="" value="female"> Female
-                    </label>
-                    <label for="gender">
-                        <input type="radio" name="gender" id="" value="other"> Other
-                    </label>
+                <div class="noob experience-button">
+                    <a href="#">Noob</a>
+                </div>
+                <div class="intermediate experience-button">
+                    <a href="#">Intermediate</a>
+                </div>
+                <div class="expert experience-button">
+                    <a href="#">Expert</a>
+                </div>
+                <div class="elite experience-button">
+                    <a href="#">Elite</a>
                 </div>
             </div>
-            <div class="textbox">
-                <input type="text" name="city" id="city" placeholder="Enter Your City" required="required">
+
+            <div class="btn-placement">
+                <button class="btn"><span>Register</span></button>
             </div>
-            <div class="radio">
-                <p>Coding Experience: </p>
-                <div class="radio-buttons">
-                    <label for="experience">
-                        <input type="radio" name="experience" id="" value="noob"> Noob
-                    </label>
-                    <label for="gender">
-                        <input type="radio" name="experience" id="" value="intermediate"> Intermediate
-                    </label>
-                    <label for="gender">
-                        <input type="radio" name="experience" id="" value="expert"> Expert
-                    </label>
-                </div>
-            </div>
-            <button class="btn">
-                <a href="../Files/index.html">Register</a>
-            </button>
-        </div>
+        </form>
     </div>
+    <footer>
+        <img src="../../res/logo-white-transp.png" alt="Codeholics logo">
+        <p>This project was created during KJSCE Hack 6.0</p>
+        <div class="info">
+            <li><a href="#">Terms Of Use</a></li>
+            <li><span>.</span></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </div>
+        <span class="copyright">Copyright &copy; 2022 Codeholics</span>
+    </footer>
 </body>
 
 </html>
