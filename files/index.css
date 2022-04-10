@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000000;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    font-size: 18px;
+}
+nav img{
+    width: 15%;
+    height: auto;
+    background-color: #000000;
+}
+nav li{
+    list-style: none;
+    background-color: #000000;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: #000000;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #000000;
+    padding: 0px 25px;
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+}
+
+nav ul li a:hover{
+    color: #f3382f;
+    transform: scale(1.2);
+}
+
+section {
+    scroll-behavior: smooth;
+}
+
+.image1{
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    width: 65vw;
+    height: 55vh;
+    box-shadow: 0px 0px 40px 10px #f3382f;
+}
+.image1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.go-to {
+    position: relative;
+    width: 20vw;
+    background-color: #ffd000;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+/* Go to code arena button styling starts */
+.btn-placement {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.btn-placement button a {
+    background-color: #ffd000;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn {
+    width: 20vw;
+    border-radius: 8px;
+    background-color: #ffd000;
+    border: 2px solid #eeeeee;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 4px 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn span {
+    color: #000000;
+    font-size: 1.5vw;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.4s;
+    padding: 10px 0;
+    background-color: #ffd000;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+    padding: 10px 0;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* Go to code arena button styling end */
+
+.moto-container {
+    background-color: #181818;
+}
+
+.moto {
+    background-color: #181818;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+span {
+    color: #f3382f;
+}
+
+.moto p {
+    font-size: 2vw;
+    margin-bottom: 2%;
+    background-color: #181818;
+}
+
+.moto h1 {
+    font-size: 4vw;
+    background-color: #181818;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    background-color: #000000;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.about p {
+    margin-top: 5vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5vw;
+}
+/* display: inline-flex */
+/* change z indexing for logo codeholics */
+hr {
+    border-top: 1px dotted #eeeeee;
+}
+
+
+/* Footer CSS */
+footer {
+    background-color: #101010;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer img {
+    width: 10%;
+    background-color: #101010;
+}
+
+footer p {
+    color: #eeeeee;
+    background-color: #101010;
+    padding-bottom: .5vh;
+    font-size: 1vw;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #101010;
+}
+
+.info li {
+    list-style-type: none;
+    font-size: 1vw;
+    padding: 20px 5px;
+    background-color: #101010;
+}
+
+.copyright {
+    color: #616161;
+    background-color: #101010;
+    font-size: .9vw;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+}

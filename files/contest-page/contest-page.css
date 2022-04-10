@@ -1,0 +1,203 @@
+* {
+    font-family: 'Josefin Sans';
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.coding-arena-logo img {
+    width: 20%;
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+.code-arena {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48vw, 100%));
+    grid-template-rows: repeat(2, auto);
+}
+
+.left textarea, .right textarea {
+    width: 49vw;
+    height: 50vh;
+    overflow: scroll;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #f3e62f;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.editor-menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.editor-menu a {
+    border: 2px solid #f3382f;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: auto;
+    margin-right: 20px;
+}
+
+::-webkit-scrollbar {
+    /* width */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    background: #1b1b1b;
+    border: .5px solid #505050;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: #f3e62f;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #000000;
+}
+
+/* Popup css */
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    width: 600px;
+    height: 250px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup .close:hover{
+    color: #f3382f;
+}
+
+.q-popup {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.q-popup .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.q-popup .close:hover{
+    color: #f3382f;
+}
+
+.q-border {
+    border: 2px solid #eeeeee;
+}
+
+.content{
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 22px;
+    width: 80%;
+}
+.content h2{
+    font-size: 35px;
+    margin: 20px 20px;
+}
+
+.content p{
+    margin: 20px 20px;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+}
+
+.success{
+    border: 5px solid #2bff00;
+}
+
+.failure{
+    border: 5px solid #ff0000;
+}
+
+.timer {
+    text-align: center;
+}
+.timer p{
+    font-size: 32px;
+    margin: 3% 0 2% 0;
+}
+.timer h1{
+    font-size: 140px;
+}
+.timer h1 span{
+    color: #f3382f;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Arena</title>
+    <link rel="stylesheet" href="./contest-page.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6d232ec003.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="coding-arena-logo">
+        <img src="../../res/contest-arena-transp.png" alt="">
+    </div>
+    <div class="editor-menu">
+        <a href="#popup-result-success"><i class="fa-solid fa-play"></i></a>
+        <!-- There are two popup class, popup-result-success and popup-result-failure. One of the two will be executed depending on the success or the victory -->
+        <a href="#">Submit</a>
+        <a href="#question"><i class="fa-solid fa-q"></i></a>
+    </div>
+
+    <div id="popup-result-success" class="overlay">
+        <div class="popup success">
+            <a class="close" href="#skills">&times;</a>
+            <div class="content">
+                <h2><span>Result: </span></h2>
+                <p><br>Hooray! Your Output Matches the Test Cases. <br>Bravo!</span></p> 
+            </div>
+        </div>
+    </div>
+    <div id="popup-result-failure" class="overlay">
+        <div class="popup failure">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <h2><span>Result: </span></h2>
+                <p>Expectations &#8800; Reality<br>Your Ouptput doesn't match the test cases. Try again!</p> 
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="code-arena">
+        <div class="left">
+            <textarea name="input" id="input" cols="30" rows="10" placeholder="//write your code here...">//Enter your code here...</textarea>
+        </div>
+        <div class="right">
+            <textarea readonly name="output" id="output" cols="30" rows="10">Output:-</textarea>
+        </div>
+    </div>
+
+    <div id="question" class="overlay">
+        <div class="q-popup q-border">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <h2><span>Problem Statement: </span></h2>
+                <p>Whole question from the database must be linked here including the sample input, sample output, constraints and format.</span></p> 
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <p>Time Remaining: </p>
+        <h1><span>10</span>:<span>00</span></h1>
+    </div>
+</body>
+
+</html>

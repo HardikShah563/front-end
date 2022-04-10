@@ -1,0 +1,49 @@
+*{
+    font-family: 'Poppins';
+    background-color: #000000;
+    color: #eeeeee;
+    padding: 0px;
+    margin: 0px;
+}
+.dashboard-page{
+    display: flex;
+}
+img{
+    width: 100%;
+}
+.profile img{
+    position: absolute;
+    background-color: #eeeeee;
+    margin: 20px 20px;
+    top: 10%;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #000000;
+    border-radius: 100%;
+}
+.margin-left{
+    margin-left: 12%;
+}
+.name{
+    font-size: 35px;
+}
+.coding-experience{
+    font-size: 15px;
+}
+.codeholics-id{
+    color: #6a6a6a;
+}
+.rank{
+    font-size: 24px;
+}
+.orange{
+    color: #F3382F;
+}
+.bio-header{
+    font-size: 24px;
+    font-weight: 500;
+}
+.bio{
+    margin-top: 50px;
+    font-weight: 300;
+}

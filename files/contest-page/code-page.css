@@ -1,0 +1,50 @@
+*{
+    font-family: 'Josefin Sans';
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.images img{
+    width: 20%;
+    height: 20%;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.grid-coding-arena{
+    display: grid;
+    margin: 10px 10px;
+}
+
+.code-arena{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.output-arena{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-test-and-questions{
+    display: grid;
+}
